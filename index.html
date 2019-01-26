@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Interact with Happiness</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+   <link rel="shortcut icon" href="images/favicon.ico" />
+   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  </head>
+  <body>
+    <div id='main-header'>
+      Interact with Happiness
+    </div>
+    <div id = 'header'>
+        <div id ='main-quote'>
+          "The care of human life and <em>happiness</em> and not their destruction is the only legitimate object of <em>good</em> government." —Thomas Jefferson
+        </div>
+
+
+          <div id ='how-to-use'>
+            The goal of Good Government should be to make it's citizens happy.
+          </div>
+          <div id='title-explanation'>
+             This Interactive uses data from the World Happiness Report for 2018. The World Happiness report is a survey of every country about it's own happiness. Through the survey countries are given a Happiness Score.
+              A Happiness Score reflects the level of happiness of individual citizens in a given country.
+              This Interactive allows a user to explore happines through country statistics for the year 2017 (2016 for Democratic Quality). By understanding the statistics one will ba able to explain how differnt statistics
+              can and do effect a citiziens happiness. Through understanding the effects of government on an indivduals happiness one develops a greater understanding of what is Good Government.
+        </div>
+        <div id ='title-use-explanation'/>
+         <div id='how-to-use-title'>How to use this Interactive</div>
+        <img class="beeswarm-gif"
+              src="images/beeswarm.gif"
+              alt="beeswarm" />
+        <div> Explore the distribution of happiness by clicking, selecting, and brushing countries. </div>
+        <div id='second-ex'> Each Country is placed horizontaly. Scaled by it's Happiness Score. </div>
+         <img class="bubble-sort-gif"
+               src="images/bubble-sort.gif"
+               alt="bubble chart" />
+          <div>Change the Bubble Chart inputs to compare statistics and see the data change. </div>
+         <img class="stacked-bar-gif"
+               src="images/stacked-bar.gif"
+               alt="stacked bar chart" />
+      <div>As you click and select countries this stacked bar  displays how happiness in the selected country is calculated.</div>
+      </div>
+     </div>
+  <div id = 'project-container'>
+        <div id = 'project-inner-container'>
+
+        <div id = 'year-button-container'>
+        </div>
+         <div id = 'select-country-container'></div>
+         <div id='container-box-swarm'>
+         </div>
+
+
+        <div id='scatterplot-container-1' class='scatter-plot-container'>
+           <div id ='scatter-menu-1'></div>
+           <div id = 'scatter-plot-1' class = 'scatter-plot'></div>
+         </div>
+
+        <div id='scatterplot-container-2' class='scatter-plot-container'>
+           <div id ='scatter-menu-2'></div>
+            <div id = 'scatter-plot-2' class = 'scatter-plot'></div>
+        </div>
+
+
+       <div id='country-stacked-bar'></div>
+    </div>
+  </div>
+
+    <div id ='data-disclosure-id'>
+
+    </div>
+
+
+ <script src="javascript/d3.js"></script>
+ <script src="javascript/d3-color.v1.min.js"></script>
+ <script src="javascript/d3-interpolate.v1.min.js"></script>
+ <script src="javascript/d3-scale-chromatic.v1.min.js"></script>
+ <script src = "javascript/lodash.min.js"></script>
+ <script src="javascript/crossfilter.js"></script>
+ <script src="index.js" ></script>
+ </body>
+</html>
